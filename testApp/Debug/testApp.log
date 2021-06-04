@@ -1,4 +1,0 @@
-﻿  testApp.cpp
-  The contents of <filesystem> are available only with C++17 or later.
-E:\sources\self\testApp\testApp.cpp(32,23): warning C4018: '<': signed/unsigned mismatch
-  testApp.vcxproj -> E:\sources\self\testApp\Debug\testApp.exe
