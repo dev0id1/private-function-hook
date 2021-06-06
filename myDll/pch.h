@@ -4,6 +4,15 @@
 // However, files listed here are ALL re-compiled if any one of them is updated between builds.
 // Do not add files here that you will be updating frequently as this negates the performance advantage.
 
+#include <utility>
+#include <limits.h>
+#include "myDLL.h"
+#include <string>
+#include <stdio.h>
+#include <cassert>
+#include <iostream>
+#include "md5.h"
+
 #ifndef PCH_H
 #define PCH_H
 

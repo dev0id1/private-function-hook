@@ -1,12 +1,5 @@
 #include "pch.h" // use stdafx.h in Visual Studio 2017 and earlier
-#include <utility>
-#include <limits.h>
-#include "myDLL.h"
-#include <string>
-#include <stdio.h>
-#include <cassert>
-#include <iostream>
-#include "md5.h"
+
 
 
 int CalculateFactorial(int in, int* out);
