@@ -100,7 +100,6 @@ int main(int argc, char* argv[])
     if (hinstLib != NULL)
     {
         CalculateFactorial = (MYPROC)GetProcAddress(hinstLib, "CalculateFactorial");
-        //const size_t offsetToCalcFactImpl = 0x000005cd;
         CalculateFactorialImp = (factorialfunc)((uintptr_t)CalculateFactorial - offsetToCalcFactImpl);
         std::cout << " CalculateFactorialImp(private) " << std::hex << CalculateFactorialImp << " CalcFactAddr: " << std::hex << CalculateFactorial << std::endl;
 
