@@ -1,4 +1,5 @@
 ﻿  testApp.cpp
   The contents of <filesystem> are available only with C++17 or later.
-E:\sources\self\testApp\testApp.cpp(32,23): warning C4018: '<': signed/unsigned mismatch
-  testApp.vcxproj -> E:\sources\self\testApp\Debug\testApp.exe
+C:\Users\dev0id\source\repos\testApp\testApp\testApp.cpp(62,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dev0id\source\repos\testApp\testApp\testApp.cpp(48): warning C4715: 'ApplyPatch': not all control paths return a value
+  testApp.vcxproj -> C:\Users\dev0id\source\repos\testApp\testApp\Debug\testApp.exe

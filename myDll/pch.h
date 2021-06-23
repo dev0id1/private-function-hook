@@ -12,6 +12,8 @@
 #include <cassert>
 #include <iostream>
 #include "md5.h"
+#include <cstdio>
+
 
 #ifndef PCH_H
 #define PCH_H

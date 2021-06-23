@@ -31,12 +31,8 @@ documentation and/or software.
 */
 
 /* interface header */
-//#include "pch.h"
-#include "md5.h"
+#include "pch.h"
 
-
-/* system implementation headers */
-#include <cstdio>
 
 
 // Constants for MD5Transform routine.

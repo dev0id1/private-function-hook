@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\sources\self\testApp\Debug\myDll.dll</FullPath>
+      <FullPath>C:\Users\dev0id\source\repos\testApp\testApp\Debug\myDll.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

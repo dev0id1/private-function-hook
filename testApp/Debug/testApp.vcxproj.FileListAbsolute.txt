@@ -1,1 +1,2 @@
 E:\sources\self\testApp\Debug\testApp.exe
+C:\Users\dev0id\source\repos\testApp\testApp\Debug\testApp.exe

@@ -2,8 +2,8 @@
 
 
 
-int CalculateFactorial(int in, int* out);
-void PrintResult(int factorial);
+int CalculateFactorial(const int in, int* out);
+void PrintResult(const int factorial);
 
 int CalculateFactorialImpl(int in)
 {
@@ -13,9 +13,9 @@ int CalculateFactorialImpl(int in)
     return !in ? 1 : in * CalculateFactorialImpl(in - 1);
 }
 
-int CalculateFactorial(int in, int* out)
+int CalculateFactorial(const int in, int* out)
 {
-    std::cout << "CalcFactorialImpl: " << &CalculateFactorialImpl << std::endl;
+    std::cout << "CalcFactorialImpl: " << &CalculateFactorialImpl <<std::endl;
     int factorial = CalculateFactorialImpl(in);
     PrintResult(factorial);
     *out = factorial;
@@ -23,7 +23,7 @@ int CalculateFactorial(int in, int* out)
 }
 
 //need for correct xor
-static inline unsigned int value(char c)
+static inline unsigned int value(const char c)
 {
     if (c >= '0' && c <= '9') { return c - '0'; }
     if (c >= 'a' && c <= 'f') { return c - 'a' + 10; }
@@ -32,12 +32,10 @@ static inline unsigned int value(char c)
 }
 
 //perform xor
-std::string StrXor(std::string const& s1, std::string const& s2)
+std::string StrXor(const std::string& s1, const std::string& s2)
 {
     std::string  hash1 = md5(s1);
     std::string  hash2 = md5(s2);
-
-    assert(hash1.length() == hash2.length());
     std::string result;
     static char const alphabet[] = "0123456789abcdef";
     result.reserve(hash1.length());
@@ -53,23 +51,23 @@ std::string StrXor(std::string const& s1, std::string const& s2)
 
 
 
-std::string Signature(std::string* str)
+std::string Signature(const std::string* str)
 {
     //imagine this function is protected
     std::string secret = "test";
     return StrXor(*str, secret);
 }
 
-void PrintResult(int factorial)
+void PrintResult(const int factorial)
 {
     std::string message = "calculated factorial is " + std::to_string(factorial);
-    std::string signature = Signature(&message);
     std::cout << "message: " << message << "\n";
+    std::string signature = Signature(&message);
     std::cout << "message hash after xor (signature): " << signature << "\n";
 }
 
 
-bool ValidateSignature(std::string* str, std::string* signature)
+bool ValidateSignature(const std::string* str, const std::string* signature)
 {
     if (Signature(str) == *signature)
         return true;

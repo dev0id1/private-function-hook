@@ -1,3 +1,6 @@
-﻿  dllmain.cpp
-     Creating library E:\sources\self\testApp\Debug\myDll.lib and object E:\sources\self\testApp\Debug\myDll.exp
-  myDll.vcxproj -> E:\sources\self\testApp\Debug\myDll.dll
+﻿  pch.cpp
+  dllmain.cpp
+  md5.cpp
+  myDll.cpp
+  Generating Code...
+  myDll.vcxproj -> C:\Users\dev0id\source\repos\testApp\testApp\Debug\myDll.dll

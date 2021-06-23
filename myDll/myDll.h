@@ -10,8 +10,8 @@
 #endif
 
 
-extern "C" MYDLL_API int CalculateFactorial(int in, int* out);
+extern "C" MYDLL_API int CalculateFactorial(const int in, int* out);
 
 
-extern "C" MYDLL_API bool ValidateSignature(std::string * str, std::string * signature);
+extern "C" MYDLL_API bool ValidateSignature(const std::string * str, const std::string * signature);
 
